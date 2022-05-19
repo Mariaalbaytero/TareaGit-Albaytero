@@ -314,4 +314,38 @@ footer h3 {
     }
 }
 
-.
+/*transformaciones*/
+.divCaravana:hover{
+    transform:scale(1.05);
+}
+
+.divOscuroExtasis:hover{
+    transform:scale(1.05);
+}
+
+.divArrancarmelo:hover{
+    transform:scale(1.05);
+}
+
+.imgBailando:hover{
+    transform:scale(1.1);
+}
+.imgMdp:hover{
+    transform:scale(1.1);
+}
+
+.imgQuintoEscalon:hover{
+    transform:scale(1.1);
+}
+
+.imgLollaVeintidos:hover{
+    transform:scale(1.1);
+}
+
+.imgRedBull:hover{
+    transform:scale(1.1);
+}
+
+.imgLollaDiecinueve:hover{
+    transform:scale(1.1);
+}
