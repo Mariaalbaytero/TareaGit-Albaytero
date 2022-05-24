@@ -27,7 +27,6 @@ h1 {
 nav {
     margin: 5px;
     padding: 0px 10px;
-    width: 100%;
 }
 
 nav ul {
@@ -66,7 +65,7 @@ main h2 {
 
 main p {
     margin: 13px;
-    font-size: 1rem;
+    font-size: 1.rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -82,7 +81,7 @@ footer {
 }
 
 footer h3 {
-    margin: 0px 10px;
+    margin: 10px;
     padding: 10px;
 }
 
@@ -100,18 +99,17 @@ footer h3 {
     justify-content: center;
 }
 
-.fotoUnoIndex {
+.fotoIndex {
     width: 30rem;
-    grid-area: imgUno;
+    grid-area: img;
 }
 
-.fotoDosIndex {
+.imgOcultaIndex {
     display: none;
-    grid-area: imgDos;
 }
 
 .pUno {
-    grid-area: pUno;
+    grid-area: pUno
 }
 
 .pDos {
@@ -212,6 +210,10 @@ footer h3 {
 }
 
 /*contactanos*/
+.bodyContactanos {
+    overflow: hidden;
+}
+
 .h2Contactanos {
     text-align: center;
 }
@@ -222,18 +224,42 @@ footer h3 {
 }
 
 /*media queries*/
-@media screen and (max-width:480px) {
-    header{
-        width: 100vh;
-    }
-}
 @media screen and (min-width:600px) {
+
     /*index*/
     .mainIndex {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "pUno"
-            "img"
-            "pDos";
+        padding: 1em;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 0.2fr 1fr 1fr;
+        gap: 0px 0px 0px;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "pUno pUno imgUno"
+            "pDos pDos imgDos";
+    }
+
+    .tituloIndex {
+        grid-area: titulo;
+    }
+
+    .pUno {
+        grid-area: pUno;
+    }
+
+    .pDos {
+        grid-area: pDos;
+    }
+
+    .imgUno {
+        grid-area: imgUno;
+    }
+
+    .imgDos {
+        grid-area: imgDos;
     }
 
     .tituloIndex {
@@ -270,17 +296,19 @@ footer h3 {
 
     /*index*/
     .mainIndex {
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 0px 0px;
-        grid-template-areas:
-            "pUno pUno imgUno"
-            "pDos pDos imgDos";
-        margin: 0rem 2rem;
+        grid-template-columns: 1fr 1fr;
     }
 
-    .fotoDosIndex {
+    .contenedorUnoIndex {
+        justify-content: start;
+        font-size: 1.2rem;
+    }
+
+    .contenedorDosIndex {
+        justify-content: end;
+    }
+
+    .imgOcultaIndex {
         display: block;
         height: 15rem;
         width: 30rem;
@@ -315,37 +343,38 @@ footer h3 {
 }
 
 /*transformaciones*/
-.divCaravana:hover{
-    transform:scale(1.05);
+.divCaravana:hover {
+    transform: scale(1.05);
 }
 
-.divOscuroExtasis:hover{
-    transform:scale(1.05);
+.divOscuroExtasis:hover {
+    transform: scale(1.05);
 }
 
-.divArrancarmelo:hover{
-    transform:scale(1.05);
+.divArrancarmelo:hover {
+    transform: scale(1.05);
 }
 
-.imgBailando:hover{
-    transform:scale(1.1);
-}
-.imgMdp:hover{
-    transform:scale(1.1);
+.imgBailando:hover {
+    transform: scale(1.1);
 }
 
-.imgQuintoEscalon:hover{
-    transform:scale(1.1);
+.imgMdp:hover {
+    transform: scale(1.1);
 }
 
-.imgLollaVeintidos:hover{
-    transform:scale(1.1);
+.imgQuintoEscalon:hover {
+    transform: scale(1.1);
 }
 
-.imgRedBull:hover{
-    transform:scale(1.1);
+.imgLollaVeintidos:hover {
+    transform: scale(1.1);
 }
 
-.imgLollaDiecinueve:hover{
-    transform:scale(1.1);
+.imgRedBull:hover {
+    transform: scale(1.1);
+}
+
+.imgLollaDiecinueve:hover {
+    transform: scale(1.1);
 }
